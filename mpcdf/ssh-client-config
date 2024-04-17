@@ -1,0 +1,28 @@
+ControlPath  ~/.ssh/controlmaster-%r@%h:%p
+ControlPersist 10h 
+
+Host odsl~*
+  RemoteCommand ~/.local/bin/cenv legend
+  RequestTTY yes
+
+Host *.mpcdf.mpg.de mpcdf-* *~mpcdf-* mpp-cluster *~mpp-cluster odslserv* *~odslserv*
+  User INSERT_YOUR_MPCDF_USERNAME_HERE
+  PubkeyAuthentication no 
+  ForwardAgent yes
+  ServerAliveInterval 120
+  ControlMaster auto 
+
+Host mpcdf-login
+  Hostname gate1.mpcdf.mpg.de
+
+Host mpp-cluster odsl~mpp-cluster
+  HostName mppui4.t2.rzg.mpg.de
+  ProxyJump mpcdf-login
+
+Host odslserv01 odsl~odslserv01
+  HostName odslserv01.t2.mpcdf.mpg.de
+  ProxyJump mpcdf-login
+
+Host odslserv02 odsl~odslserv02
+  HostName odslserv02.t2.mpcdf.mpg.de
+  ProxyJump mpcdf-login
