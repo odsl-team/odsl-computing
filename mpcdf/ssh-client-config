@@ -1,4 +1,4 @@
-ControlPath  ~/.ssh/controlmasters/m-%r@%h:%p
+ControlPath  ~/.ssh/controlmaster-%r@%h:%p
 ControlPersist 10h 
 
 Host odsl~*
