@@ -78,7 +78,7 @@ Instead of installing your software manually, we recommend that you use Apptaine
 Run
 
 ```shell
-ln -s "/ptmp/mpp/projects/odsl/sw/container-env/bin/cenv" "$HOME/.local/bin"
+ln -s "/ptmp/mpp/software/container-env/bin/cenv" "$HOME/.local/bin"
 ```
 
 to add `cenv` to `$HOME/.local/bin` (should be on your `$PATH`).
@@ -95,7 +95,7 @@ Now create an `cenv` environment named `odsl` that uses the standard ODSL Apptai
 
 
 ```shell
-cenv --create odsl /ptmp/mpp/projects/odsl/sw/apptainer/images/mppmu_odsl-ml_latest.sif
+cenv --create odsl /ptmp/mpp/software/apptainer/images/odsl/mppmu_odsl-ml_latest.sif
 ```
 
 This will create a new directory `.cenv/odsl` that contains a symbolic link to the Apptainer image (you can also create this manually).
