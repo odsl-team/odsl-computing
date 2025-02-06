@@ -37,6 +37,9 @@ The cluster offers
 
 For historical reasons, older nodes in the MPCDF MPP cluster are part of the domain `t2.rzg.mpg.de`, while newer nodes are part of `t2.mpcdf.mpg.de`.
 
+Also take a look at the detailed
+[Documentation of the MPP cluster at MPCDF](https://docs.t2.mpcdf.mpg.de/).
+
 
 ### Interactive compute nodes (compute servers)
 
