@@ -86,7 +86,7 @@ Now create an `cenv` environment named `odsl` that uses the standard ODSL Apptai
 
 
 ```shell
-cenv --create odsl /ptmp/mpp/software/apptainer/images/odsl/mppmu_odsl-ml_latest.sif
+cenv --create odsl /ptmp/mpp/projects/software/apptainer/images/odsl/mppmu_odsl-ml_latest.sif
 ```
 
 This will create a new directory `.cenv/odsl` that contains a symbolic link to the Apptainer image (you can also create this manually).
